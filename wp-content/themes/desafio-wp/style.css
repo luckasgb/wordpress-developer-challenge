@@ -1,0 +1,210 @@
+/*
+Theme Name: Play
+Author: (Luckas)
+Version: 1.0
+Text Domain: desafio-wp-Luckas
+*/
+
+@font-face { font-family: Circular Spotify TxT-medium; src: url(assets/fonts/CircularSpotifyTxT-Med.ttf); }
+@font-face { font-family: Circular Spotify TxT-light; src: url(assets/fonts/CircularSpotifyTxT-Light.ttf); }
+@font-face { font-family: Circular Spotify TxT-black; src: url(assets/fonts/CircularSpotifyTxT-Black.ttf); }
+
+:root{
+    --xblack:#000000;
+    --xred:#FF0000;
+    --xredHover: #b80303;
+    --xwhite:#FFFFFF;
+    --xdark:#121212;
+    --xgrey:#5A5A5A;
+    --xdark2:#000000E6;
+}
+
+body{
+    background-color: var(--xblack);
+}
+
+.img_custom-logo{
+    max-width: 104px !important;
+}
+
+.section-category{
+    margin-top: 85px;
+}
+
+.section-single{
+    margin-top: 85px;
+}
+
+.section-footer{
+    background-color: var(--xdark);
+    padding: 155px 0;
+    margin: 65px 0 0 0;
+    color: var(--xwhite);
+}
+
+.div-copy{
+    font-size: small;
+}
+
+.section-menu > nav > a.linkwhite{ font-family: 'Circular Spotify TxT-medium'; color: var(--xwhite); }
+.section-menu > nav > a.linkwhite:hover{ color: var(--xwhite); text-decoration: underline; }
+
+.navbar-nav > li >a{ font-family: 'Circular Spotify TxT-light'; color: var(--xwhite) !important; }
+.navbar-nav > li >a:hover{ text-decoration: underline !important; color: var(--xred) !important; }
+
+.div_quadro_video > a:link, .div_quadro_video > a:active, .div_quadro_video > a:visited{ color: var(--xwhite) !important; transition: 0.5s; }
+.div_quadro_video > a:hover{ color: var(--xred) !important; text-decoration: none; }
+
+.section-footer > div > a.linkwhite:link, .section-footer > div > a.linkwhite:active, .section-footer > div > a.linkwhite:visited{ font-family: 'Circular Spotify TxT-medium'; color: var(--xwhite); transition: 0.5s; }
+.section-footer > div > a.linkwhite:hover{ color: var(--xred);}
+
+.div-cat-title-home > a:link, .div-cat-title-home > a:active, .div-cat-title-home > a:visited{
+    font-family: 'Circular Spotify TxT-black';
+    color: var(--xred);
+    font-size: x-large;
+    transition: 1s;
+}
+
+.div-cat-title-home > a:hover{
+    color: var(--xredHover);
+    text-decoration: none;
+}
+
+.div-link-home > a:link, .div-link-home > a:active, .div-link-home > a:visited{ 
+    font-family: 'Circular Spotify TxT-medium';
+    min-width: 45px; 
+    background-color: var(--xred); 
+    color: var(--xwhite); 
+    padding: 7px 33px;
+    border-radius: 3px;
+    transition: 1s;
+}
+
+.div-link-home > a:hover{
+    background-color: var(--xredHover);
+    text-decoration: none;
+}
+
+.h2-titulo_categoria{
+    font-family: 'Circular Spotify TxT-black';
+    color: var(--xred) !important;
+}
+
+.div-coluna-nomecategoria > p{
+    font-family: 'Circular Spotify TxT-light'; 
+    font-weight: 500;
+    color: var(--xwhite) !important;
+}
+
+.div-coluna-nomecategoria{
+    width: 40%;
+    max-width: 425px;
+    margin-right: 35px;
+}
+
+.div-coluna-videoscategoria{
+    width: 60%;
+}
+
+.div_quadro_video{
+    width: 195px;
+    min-height: 415px;  
+    margin: 8px 8px 30px 8px;
+}
+
+.div-thumb-video{
+    width: 195px;
+    height: 304px;
+    background-position: center;
+    background-size: cover;
+}
+
+.div-time-video{
+    font-family: 'Circular Spotify TxT-medium'; 
+    font-size: small;
+    color: var(--xwhite);
+    border: 1px solid var(--xwhite) !important;
+    width: 85px;
+    padding-top: 2px;
+}
+
+.div-title-video{
+    font-family: Circular Spotify TxT-black;
+    font-size: large;
+    white-space: normal;
+}
+
+.div-single-cat{
+    font-family: 'Circular Spotify TxT-medium'; 
+    font-size: small;
+    background-color: var(--xwhite);
+    color: var(--xgrey);
+    min-width: 85px;
+    padding-top: 2px;
+}
+
+.div-single-title{
+    font-family: Circular Spotify TxT-black;
+    font-size: xx-large;
+    color: var(--xwhite);
+}
+
+.div-frame-video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.iframe-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.div-single-descrp{
+    font-family: 'Circular Spotify TxT-light'; 
+    font-weight: 500;
+    color: var(--xwhite) !important;
+}
+
+.section_thumb_destaq{
+    background-position: center center;
+    background-size: cover;
+    min-height: 690px;
+    padding-top: 335px;
+    padding-bottom: 335px;
+}
+
+.div-home-title{
+    font-family: Circular Spotify TxT-black;
+    font-size: 3.5em;
+    color: var(--xwhite);
+    width: 55%;
+}
+
+.carousel-thumbs-home{
+    white-space: nowrap;
+    height: 505px;
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+
+    .div-home-title{
+        width: 100%;
+    }
+
+    .div-coluna-nomecategoria{
+        max-width: none;
+        width: 100% !important;
+        margin-right: 0px;
+    }
+
+    .div-coluna-videoscategoria{
+        width: 100% !important;
+    }
+ }
